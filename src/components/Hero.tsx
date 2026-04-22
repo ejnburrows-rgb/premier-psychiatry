@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 order-2 md:order-1 animate-fade-in-up">
-            <h1 className="font-playfair text-[32px] md:text-[40px] font-bold text-charcoal leading-tight">
+            <h1 className="font-playfair text-[32px] md:text-[40px] font-bold text-charcoal leading-tight" style={{ textShadow: "2px 2px 0 #1B2A4A" }}>
               Compassionate Psychiatric Care for Adults and Adolescents in Wellington, Florida
             </h1>
             <p className="text-[16px] md:text-[18px] text-charcoal-light leading-[1.7] delay-150">

@@ -4,17 +4,34 @@ export default function About() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* INFO-HEADER STACKED ABOVE */}
-        <div className="text-center mb-10">
-          <p className="text-sage uppercase tracking-widest text-sm font-bold mb-4">
-            Meet Your Provider
-          </p>
-          <div className="w-12 h-px bg-[#1B2A4A] mx-auto mb-6"></div>
-          <h2 id="about-heading" className="font-playfair text-[28px] md:text-[36px] font-bold text-charcoal mb-4" style={{ textShadow: "2px 2px 0 #1B2A4A" }}>
-            Aylin Sanchez, PMHNP-BC
-          </h2>
-          <p className="font-lato text-[16px] md:text-[18px] text-charcoal-light">
-            Board-certified Psychiatric Nurse Practitioner &middot; Bilingual EN/ES
-          </p>
+        <div className="text-center mb-12 relative">
+          {/* Sunset glow decorative element (Option A) */}
+          <div 
+            className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-[560px] h-[560px] pointer-events-none z-0" 
+            style={{ background: "radial-gradient(circle, rgba(242,184,160,0.45) 0%, transparent 70%)" }}
+          ></div>
+          
+          <div className="relative z-10">
+            {/* a) Company name */}
+            <h2 className="font-playfair text-[32px] md:text-[44px] lg:text-[52px] font-bold text-charcoal leading-tight mb-14" style={{ textShadow: "2px 2px 0 #1B2A4A" }}>
+              Premier Psychiatry of Wellington
+            </h2>
+
+            {/* c) Eyebrow label */}
+            <p className="text-sage uppercase tracking-widest text-sm font-bold mb-3">
+              MEET THE PROVIDER
+            </p>
+
+            {/* d) Provider name */}
+            <h3 id="about-heading" className="font-playfair text-[28px] md:text-[36px] font-bold text-charcoal mb-4" style={{ textShadow: "2px 2px 0 #1B2A4A" }}>
+              Aylin Sanchez, PMHNP-BC
+            </h3>
+
+            {/* e) Tagline */}
+            <p className="font-lato text-[16px] md:text-[18px] text-charcoal-light">
+              Board-certified Psychiatric Nurse Practitioner &middot; Bilingual EN/ES
+            </p>
+          </div>
         </div>
 
         {/* PHOTO CENTERED */}

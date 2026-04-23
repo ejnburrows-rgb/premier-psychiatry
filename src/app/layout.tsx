@@ -21,18 +21,18 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: "Premier Psychiatry of Wellington | Aylin Sanchez, PMHNP-BC, APRN, DNP",
-  description: "Board-certified Psychiatric Nurse Practitioner offering medication management and therapy for anxiety, depression, ADHD, trauma, and more. Bilingual English/Spanish. Telehealth in Florida.",
+  description: "Bilingual (English/Spanish) telehealth psychiatry for adults, adolescents, and preteens across Florida. Medication management, therapy, and support for anxiety, depression, ADHD, trauma, and more. Aylin Sanchez, PMHNP-BC.",
   openGraph: {
     title: "Premier Psychiatry of Wellington | Aylin Sanchez, PMHNP-BC, APRN, DNP",
-    description: "Board-certified Psychiatric Nurse Practitioner offering medication management and therapy for anxiety, depression, ADHD, trauma, and more. Bilingual English/Spanish. Telehealth in Florida.",
+    description: "Bilingual (English/Spanish) telehealth psychiatry for adults, adolescents, and preteens across Florida. Medication management, therapy, and support for anxiety, depression, ADHD, trauma, and more. Aylin Sanchez, PMHNP-BC.",
     url: "https://premier-psychiatry-one.vercel.app",
     siteName: "Premier Psychiatry of Wellington",
     images: [
       {
-        url: "/og-image.png",
+        url: "/Aylin.png",
         width: 1200,
         height: 630,
-        alt: "Premier Psychiatry of Wellington",
+        alt: "Aylin Sanchez, PMHNP-BC — Premier Psychiatry of Wellington",
       },
     ],
     locale: "en_US",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Premier Psychiatry of Wellington | Aylin Sanchez, PMHNP-BC, APRN, DNP",
-    description: "Board-certified Psychiatric Nurse Practitioner offering medication management and therapy for anxiety, depression, ADHD, trauma, and more. Bilingual English/Spanish. Telehealth in Florida.",
-    images: ["/og-image.png"],
+    description: "Bilingual (English/Spanish) telehealth psychiatry for adults, adolescents, and preteens across Florida. Medication management, therapy, and support for anxiety, depression, ADHD, trauma, and more. Aylin Sanchez, PMHNP-BC.",
+    images: ["/Aylin.png"],
   },
 };
 
@@ -50,7 +50,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Premier Psychiatry of Wellington",
-  "description": "Board-certified Psychiatric Nurse Practitioner offering medication management and therapy for anxiety, depression, ADHD, trauma, and more. Bilingual English/Spanish. Telehealth in Florida.",
+  "description": "Bilingual (English/Spanish) telehealth psychiatry for adults, adolescents, and preteens across Florida. Medication management, therapy, and support for anxiety, depression, ADHD, trauma, and more. Aylin Sanchez, PMHNP-BC.",
   "url": "https://premier-psychiatry-one.vercel.app",
   "telephone": "(561) 834-5705",
   "email": "aylin@premierpsychiatrywellington.com",
@@ -82,6 +82,19 @@ const jsonLd = {
   }
 };
 
+const physicianJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Aylin Sanchez, PMHNP-BC",
+  "medicalSpecialty": "Psychiatry",
+  "telephone": "+1-561-834-5705",
+  "email": "aylin@premierpsychiatrywellington.com",
+  "url": "https://premier-psychiatry-one.vercel.app",
+  "identifier": { "@type": "PropertyValue", "propertyID": "NPI", "value": "1790517449" },
+  "areaServed": { "@type": "State", "name": "Florida" },
+  "availableService": { "@type": "MedicalTherapy", "name": "Telehealth Psychiatric Care" }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -93,6 +106,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianJsonLd) }}
         />
       </head>
       <body className="font-lato bg-background text-charcoal pb-16 md:pb-0">

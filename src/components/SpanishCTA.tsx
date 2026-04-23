@@ -4,7 +4,7 @@ export default function SpanishCTA() {
       <div className="max-w-3xl mx-auto text-center px-6">
         <p className="font-playfair text-[20px] md:text-[24px] font-bold text-[#7CA18C] mb-6 leading-relaxed">
           <span role="img" aria-label="Spain Flag Emoji" className="mr-2">🇪🇸</span> 
-          Atención psiquiátrica en español. Hablo español con fluidez para que puedas expresarte en el idioma que te sea más cómodo.
+          Atención psiquiátrica en su propio idioma. Hablar de lo que sentimos es más sencillo cuando no hay barreras lingüísticas.
         </p>
         <a 
           href="https://care.headway.co/providers/aylin-sanchez-pmhnp-bc"

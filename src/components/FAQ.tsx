@@ -6,7 +6,7 @@ export default function FAQ() {
   const faqs = [
     {
       q: "Do you prescribe controlled substances?",
-      a: "I evaluate each patient individually. Medication decisions are made collaboratively based on your clinical needs, history, and treatment goals."
+      a: "Yes, when clinically appropriate. Prescribing decisions — including Schedule II controlled substances such as stimulants for ADHD — are made after a thorough clinical evaluation and ongoing monitoring. Controlled-substance prescribing follows federal DEA regulations and Florida's electronic prescribing rules. Not every patient will require or receive medication."
     },
     {
       q: "What happens during the first appointment?",

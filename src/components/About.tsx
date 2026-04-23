@@ -56,9 +56,10 @@ export default function About() {
             <p>
               Together we look at the full picture—therapy, medication when appropriate, lifestyle, and the unique factors that shape your life. It brings me great fulfillment to be part of someone&apos;s healing process and to witness meaningful changes in their life.
             </p>
-            <p className="font-bold text-sage mt-4 flex items-center gap-2">
-              <span role="img" aria-label="Spain Flag Emoji">🇪🇸</span> Se habla español
-            </p>
+            <div className="mt-8 p-6 bg-sage/5 border-l-4 border-sage rounded-r-xl italic text-charcoal">
+              <p className="font-playfair text-xl mb-2 font-bold text-sage">Atención en su idioma</p>
+              <p>Entiendo que hablar de salud mental es más sencillo en nuestra lengua materna. Ofrezco consultas completamente bilingües para que pueda expresarse con total confianza y claridad.</p>
+            </div>
           </div>
           
           <div className="mt-2 p-6 md:p-8 bg-card rounded-xl shadow-sm border border-card">

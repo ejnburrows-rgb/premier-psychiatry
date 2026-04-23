@@ -5,11 +5,16 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 order-2 md:order-1 animate-fade-in-up">
             <h1 className="font-playfair text-[32px] md:text-[40px] font-bold text-charcoal leading-tight" style={{ textShadow: "2px 2px 0 #1B2A4A" }}>
-              Compassionate Psychiatric Care for Adults and Adolescents in Wellington, Florida
+              Compassionate Psychiatric Care Across the Lifespan in Wellington, Florida
             </h1>
-            <p className="text-[16px] md:text-[18px] text-charcoal-light leading-[1.7] delay-150">
-              Medication management, therapy, and support for anxiety, depression, ADHD, trauma, and more. Bilingual (English/Spanish). 100% virtual.
-            </p>
+            <div className="flex flex-col gap-2">
+              <p className="text-[16px] md:text-[18px] text-charcoal-light leading-[1.7] delay-150">
+                Medication management, therapy, and support for anxiety, depression, ADHD, trauma, and more. Bilingual (English/Spanish). 100% virtual.
+              </p>
+              <p className="text-[16px] md:text-[18px] text-sage font-medium italic leading-[1.7] delay-200">
+                Atención psiquiátrica bilingüe y virtual para ansiedad, depresión, TDAH y bienestar emocional.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-2 delay-300">
               <a 
                 href="https://care.headway.co/providers/aylin-sanchez-pmhnp-bc"
